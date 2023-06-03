@@ -113,36 +113,120 @@ THU DataMining MOOC:  https://www.bilibili.com/video/BV154411Q7mG
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105447083.png" alt="image-20230527105447083" style="zoom: 67%;" />
 
-## 第二章 数据 考挺多 很重要（小题）
+## 第二章 数据 
 
-#### 数据属性与对象
-##### 分析属性类别
+#### 2.1 数据属性与对象
 
-<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105636202.png" alt="image-20230527105636202" style="zoom: 67%;" />
+##### 数据的定义
 
-#### 离散和连续属性的特点
+- 属性Attribute：对象的特性或特征
+- 对象Object：属性的集合
 
-<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105834899.png" alt="image-20230527105834899" style="zoom: 67%;" />
+##### 属性值与属性
 
-#### 对称和非对称
+- 相同的属性可以映射到不同的属性值
+  - eg: 高度可以用英尺或米来表示
+- 不同的属性可以映射到同一组值
+  - eg: ID和age的属性值都是整数
 
-<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105853478.png" alt="image-20230527105853478" style="zoom: 67%;" />
+##### 属性类别与属性值特性
 
-#### 各种各样数据类型的特点
+<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105636202.png" alt="image-20230527105636202" style="zoom: 50%;" />
 
-看ppt 2.1-2.4 p20-30
 
-#### 数据的质量 影响原因*5
 
-<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527110115625.png" alt="image-20230527110115625" style="zoom:67%;" />
+<img src="C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230603192015538.png" alt="image-20230603192015538" style="zoom: 67%;" />
 
-#### 相似度和距离（简单的出一出）马氏距离不考
+
+
+#### 离散和连续属性
+
+- 离散属性
+
+  > 只有一组有限的或可数无限的值
+
+  - 示例：邮政编码、计数或文档中的一组单词（整数变量）
+  - 二进制属性是离散属性的特例
+
+- 连续属性
+
+  > 将实数作为属性值
+
+  - 示例：温度、身高或体重（浮点变量）
+  - 实际值只能用有限的数字来测量和表示
+
+#### 非对称属性
+
+> 只有存在（非零属性值）才被视为重要
+>
+> **存在即正义**
+
+- 示例：文档中出现的词语、客户交流记录中的项目
+
+- 有时需要用两个不对称的二进制属性来表示一个普通的二进制属性
+  - 关联分析使用非对称属性
+  - 非对称属性通常产生于集合中的对象
+
+#### 2.2 数据类型
+
+##### 数据类型
+
+- Record
+  - 数据矩阵
+  - 文件数据
+  - 交易数据
+- Graph
+  - 万维网
+  - 分子结构
+- Ordered
+  - 空间数据
+  - 事态数据
+  - 顺序数据
+  - 遗传序列数据
+
+##### 数据的重要特点
+
+- 维度-Dimensionality
+- 稀疏性-Sparsity
+- 分辨率-Resolution
+- 大小-Size
+
+#### 2.3 数据的质量
+
+影响数据质量的原因
+
+- 噪声和离群点
+  - 噪声
+    - 对数据对象：与被测量对象没有直接联系的谬误对象
+    - 对属性：测量误差的随机部分
+    - 示例：通话质量较低产生的声音失真、电视机“雪花点”
+  - 离群点
+    - 对数据对象：不同于数据集中大部分数据对象特征的数据对象
+    - 对数据属性：相比于该属性典型值来说不寻常的属性值
+    - 离群点可能被当作噪声进行滤除或将其忽视
+    - 离群点也可能作为被重点关注的对象或值 -> 信用卡欺诈、网络入侵
+- 错误数据
+- 虚假数据
+- 遗漏值
+  - 数据遗漏的原因
+    - 信息收集不全
+    - 部分属性不适合描述部分对象
+  - 处理方法
+    - 删除数据对象或属性
+    - 估计遗漏值
+    - 在分析时忽略遗漏值
+- 重复数据
+  - 并非所有重复数据都应被移除，多个对象的属性度量相同也可能是合法的
+
+#### 2.4 相似度与距离
+
+
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527110218040.png" alt="image-20230527110218040" style="zoom:67%;" />
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527110229117.png" alt="image-20230527110229117" style="zoom:67%;" />
 
-#### 【计算】简单匹配系数
+##### 【计算】简单匹配系数
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527110252391.png" alt="image-20230527110252391" style="zoom:67%;" />
 
@@ -150,13 +234,17 @@ THU DataMining MOOC:  https://www.bilibili.com/video/BV154411Q7mG
 
 
 
-#### 【计算】相关性 《稍微看一看》
+##### 【计算】相关性 《稍微看一看》
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527110507542.png" alt="image-20230527110507542" style="zoom: 67%;" />
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527110451604.png" style="zoom: 67%;" />
 
-#### 熵
+##### 熵
+
+> 实际表示的是记录时间结果所需要的bits
+>
+> 大小在0~log2n之间
 
 $$
 H(X)=-\sum_{i=1}^{n} p_{i} \log _{2} p_{i}
@@ -164,42 +252,75 @@ $$
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527111913314.png" alt="image-20230527111913314" style="zoom:67%;" />
 
-### 数据预处理
+##### 互信息
+
+> 一组值对另一组提供多少信息的度量
+$$
+H(X)=H(X)+H(Y)-H(X,Y)
+$$
+其中,H(X,Y)为X和Y的联合熵：
+$$
+H(X,Y)=-\sum_{i}\sum_{j} p_{ij} log_{2} p_{ij}
+$$
+
+##### 邻近度差异适用范围分析：
+
+- 简单匹配系数SMC：只含有二元属性的两个对象的相似度
+- （广义）Jaccard系数：用于文档数据
+- 余弦相似度：统计文档数据中的词频相似
+- 相关性：测量两组被观测值之间的线性关系，可以是不同变量或不同对象
+- 欧几里得距离：注重数值（大小）
+
+### 2.5 数据预处理
 
 （好好看一下）
 
-#### 聚集
+##### 聚集
 
-将两个或多个对象合并成单个对象
+> 将两个或多个对象合并成单个对象
 
-**聚集的目的**：
+**聚集的目的：**
 
 - 减少数据量，从而减小数据存储空间及处理时间；
-- 范围或标度转换，例如：
-  将不同城市按照行政区、州、国家等进行聚集；
-  将日期按照星期、月份、年份等进行聚集。
-- 提供更加“稳定的” 数据：
-  聚集的数据往往具有更小的变异性
+- 范围或标度转换
+  - 将不同城市按照行政区、州、国家等进行聚集
+  - 将日期按照星期、月份、年份等进行聚集
+  
+- 提供更加“稳定的” 数据
+  - 聚集的数据往往具有更小的变异性
 
-#### 抽样
+
+##### 抽样
+
+> 减少数据量的常用方法
+>
+> 在统计学中，常用于实现调查和最终数据的分析
 
 **抽样的意义**：
 
-- 对统计学家来说，获取感兴趣的整个数据集代价太高，且太费时间；
-- 对数据挖掘人员来说，处理所有数据所需的内存太大、时间太长、计算成本太高。
+- 对统计学家来说，获取感兴趣的整个数据集代价太高，且太费时间
+- 对数据挖掘人员来说，处理所有数据所需的内存太大、时间太长、计算成本太高
 
 **抽样方法**：
 
-- 简单随机抽样（有放回抽样较简单、无放回抽样理论误差较低）
+- 简单随机抽样
+  - 等概率抽样
+  - 有放回抽样较简单、无放回抽样理论误差较低
+
 - 分层抽样
+  - 从不同类型的对象中随机抽取样本
+
 - 渐进抽取
 
-#### 降维
+##### 降维
 
 **降维的意义**：
 
 - 减少数据量，从而减小数据存储空间及处理时间
 - 避免维灾难
+  - 维灾难：随着维度增加，数据在其所在空间中越来越稀疏
+  - 而维度太小也会导致难以对不同点的类进行划分
+
 - 消除无关变量
 - 有利于模型的理解及数据可视化
 
@@ -207,30 +328,53 @@ $$
 
 - 奇异值分解(SVD)
 - 主成分分析(PCA)
+  - 原数据映射到具有最大方差的方向上
+
 - 因子分析(FA)
 - 独立成分分析(ICA)。
 
-#### 特征子集选择
+##### 特征子集选择
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527115712428.png" alt="image-20230527115712428" style="zoom:67%;" />
 
-#### 特征创建
+##### 特征创建
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527115820872.png" alt="image-20230527115820872" style="zoom:67%;" />
 
-#### 离散化与二值化
+##### 离散化与二值化
 
-<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527115921215.png" alt="image-20230527115921215" style="zoom:67%;" />
+1. 离散化
 
-<img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527115944443.png" alt="image-20230527115944443" style="zoom:67%;" />
+- > 将连续属性（区间、比率）变换为序数属性的过程
 
-#### 属性变换
+  - 理论上无限个数的值可以映射到有限的几个类别中
+  - 常用于分类任务，合并某些值减少类别数量
+
+- 以下为鸢尾花的离散化样例
+
+<img src="C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230604004900567.png" alt="image-20230604004900567" style="zoom:50%;" />
+
+<img src="C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230604004833711.png" alt="image-20230604004833711" style="zoom:50%;" />
+
+- 离散化分类
+  - 无监督离散化：根据数据分布确定分割点（如上例）
+  - 有监督离散化：使用类信息（标签）确定分割点
+
+2. 二值化
+
+- > 将连续或分类属性映射到一个或多个二进制变量中
+
+  - 通常连续转分类，分类再转二进制
+  - 常用于关联分析，需要分析是否存在非对称的二元属性
+  - eg：眼睛颜色深度和高度通常表示为{低、中、高}，可表示为{1 0 0、0 1 0 、0 0 1}
+
+##### 属性变换
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527120007251.png" alt="image-20230527120007251" style="zoom:67%;" />
 
 
 
-## 第三章 分类的基本概念与技术
+## 第三章 分类：基本概念和技术
 
 ### 基本分类器 
 
