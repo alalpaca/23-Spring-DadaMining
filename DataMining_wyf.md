@@ -35,7 +35,7 @@ THU DataMining MOOC:  https://www.bilibili.com/video/BV154411Q7mG
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105005258.png" alt="image-20230527105005258" style="zoom: 67%;" />
 
-#### 一个什么应用：在ppt上
+
 
 #### 分类任务：
 
@@ -45,11 +45,11 @@ THU DataMining MOOC:  https://www.bilibili.com/video/BV154411Q7mG
 >
 > Trainning Set → **Learn Classifier**   →   Model
 
-**分类任务举例：**
+##### 分类任务举例
 
 <img src="C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230603144611456.png" alt="image-20230603144611456" style="zoom: 50%;" />
 
-**分类应用：**
+##### 分类应用
 
 - 信用卡欺诈检测
 - 电话客户的客户流失预测
@@ -63,7 +63,7 @@ THU DataMining MOOC:  https://www.bilibili.com/video/BV154411Q7mG
 >
 > 广泛用于统计研究和神经网络领域
 
-**回归应用：**
+##### 回归应用
 
 - 基于广告支出预测新产品的销售额。
 - 预测风速，作为温度、湿度、气压等的函数。
@@ -75,25 +75,48 @@ THU DataMining MOOC:  https://www.bilibili.com/video/BV154411Q7mG
 
 <img src="C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230603145843152.png" alt="image-20230603145843152" style="zoom:50%;" />
 
-**聚类应用：**
+##### 聚类应用
 
 - 数据理解 -> 统计相似事物来理解其数据
 - 数据总结 -> 减小大型数据集的大小
 - 市场细分 -> 寻找类似客户的集群
 - 文档聚类
   - 目标：根据文档中显示的重要术语查找相似的文档组
-  - 方法：确定每个文档中频繁出现的术语
-  - 根据不同术语的频率形成相似度量，使用它进行群集
+  - 方法：确定每个文档中频繁出现的术语，根据不同术语的频率形成相似度量，使用它进行群集
 
+#### 关联规则
 
+> 给定一组记录，每个记录都包括给定集合中的一些项数
+>
+> 生成依赖项规则，基于其他项的发生率预测项的发生
 
-#### 数据挖掘挑战可能会问一下
+##### 关联分析应用
+
+- 市场分析
+- 电信报警诊断
+- 医学信息学
+
+#### 偏差/异常/变化检测
+
+> 检测与正常行为的重大偏差
+
+##### 应用
+
+- 信用卡欺诈检测
+- 网络入侵检测
+- 识别传感器网络的异常行为，用于监控
+- 检测全球森林覆盖的变化
+
+#### 数据挖掘挑战
+
+（可能会问）
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105447083.png" alt="image-20230527105447083" style="zoom: 67%;" />
 
 ## 第二章 数据 考挺多 很重要（小题）
 
-#### 分析属性类别
+#### 数据属性与对象
+##### 分析属性类别
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527105636202.png" alt="image-20230527105636202" style="zoom: 67%;" />
 
