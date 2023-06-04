@@ -391,13 +391,13 @@ $$
 
 ### 指标要知道怎么算
 
-#### 【计算】基尼系数
+#### 【计算】基尼系数&熵&分类误差
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527134842221.png" alt="image-20230527134842221" style="zoom:67%;" />
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527135002306.png" alt="image-20230527135002306" style="zoom:67%;" />
 
-#### 分类误差 好像没有
+![image-20230604014627825](C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230604014627825.png)
 
 <img src="https://raw.githubusercontent.com/SHUzhekiNg/SHUzhekiNg.github.io/main/assets/typoraimages/image-20230527135229108.png" alt="image-20230527135229108" style="zoom:67%;" />
 
@@ -476,6 +476,16 @@ $$
 ==边界、支持向量==
 
 ==**统计学习方法：第七章**==
+
+![image-20230604030706069](C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230604030706069.png)
+$$
+w = \sum_{i=1}^{l} a_{i} y_{i} x_{i}\
+$$
+$$
+\sum_{i=1}^{l} a_{i} y_{i}\ = 0
+$$
+
+![image-20230604032346385](C:\Users\Kevin Wang\AppData\Roaming\Typora\typora-user-images\image-20230604032346385.png)
 
 #### 贝叶斯 好像不考
 
